@@ -1,11 +1,19 @@
 import React, {Component} from 'react';
 
+import {Container,Row,Col} from 'react-bootstrap';
 import MapContainer from './components/MapContainer'
 
 class App extends Component{
   render(){
     return <div>
-      <MapContainer />
+      <Container>
+        <MapContainer />
+        <Row>
+          <Col xs={6} md={12} style={{marginTop: '400px'}}>
+          <CardsWeather />
+          </Col>
+        </Row>
+      </Container>
     </div>
   }
 }
