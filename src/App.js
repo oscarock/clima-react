@@ -1,11 +1,13 @@
-import './assets/css/App.css';
+import React, {Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hola</h1>
+import MapContainer from './components/MapContainer'
+
+class App extends Component{
+  render(){
+    return <div>
+      <MapContainer />
     </div>
-  );
+  }
 }
 
 export default App;
